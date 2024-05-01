@@ -1,0 +1,39 @@
+import = ["/home/phlight/.config/alaclitty/themes/themes/ashes_light.toml"]
+
+[env]
+TERM = "termguicolors"
+
+[shell]
+program = "/bin/zsh"
+
+[cursor]
+style = "Beam"
+
+[window]
+
+opacity = 0.8
+
+padding.x = 10
+padding.y = 10
+
+decorations = "Full"
+decorations_theme_variant = "Dark"
+
+[font]
+size = 20.0
+
+[font.bold]
+family = "Hack Nerd Font Mono"
+style = "Bold"
+
+[font.bold_italic]
+family = "SauceCodePro Nerd Font"
+style = "Bold Italic"
+
+[font.italic]
+family = "Inconsolata Nerd Font"
+style = "Italic"
+
+[font.normal]
+family = "Envy Code R"
+style = "Regular"

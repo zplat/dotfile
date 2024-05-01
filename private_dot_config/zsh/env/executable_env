@@ -1,0 +1,142 @@
+#---------------------------------@#
+#  Environmentals
+#---------------------------------@#
+
+#---------------------------------------------------------------------------------$
+#                                                          Default Programs
+
+export EDITOR="nvim"                                       
+export READER="zathura"
+export VISUAL="nvim"
+export TERMINAL="alacritty,xterm-kitty"
+export VIDEO="mpv"
+export IMAGE="imv"
+export COLORTERM="truecolor"
+export OPENER="xdg-open"
+export PAGER="less"
+export BROWSER="vieb"
+export BROWSERCLI="lynx"
+export MAILDIR="$XDG_DATA_DIR/mai
+"
+export TERM="xterm-256color"
+#---------------------------------------------------------------------------------$
+#                                                          git repositories
+export REPOSITORIES="$HOME/.local/repositories"
+#---------------------------------------------------------------------------------$
+#                                                          zsh
+
+export HISTFILE="$ZDOTDIR/.zhistory"                       # History filepath
+export HISTSIZE=1000                                       # Maximum events for internal history
+export SAVEHIST=1000                                       # Maximum events in history file                                         
+export GPG_TTY=$(tty)                                      # Connect terinal to Std input
+#---------------------------------------------------------------------------------$
+#                                                          foot terminal
+
+export PATH="$PATH:$XDG_CONFIG_HOME/foot/foot.ini"	       
+
+#---------------------------------------------------------------------------------$
+#                                                          rubygem 
+export PATH="$PATH:$XDG_DATA_HOME/gem/ruby/3.0.0/bin"	       
+
+#---------------------------------------------------------------------------------$
+#                                                          Dropbox folder
+
+export DROPBOX_HOME="$HOME/Dropbox"	       
+#---------------------------------------------------------------------------------$
+#                                                          Less
+
+export LESSHISTFILE=-                                      
+#---------------------------------------------------------------------------------$
+#                                                          tmuxp
+
+export TMUXP_CONFIGDIR="$XDG_CONFIG_HOME/tmuxp"            
+#---------------------------------------------------------------------------------$
+#                                                          R-Stats (cran)
+
+export R_LIBS_USER="$XDG_CONFIG_HOME/R/library"            # Library
+#---------------------------------------------------------------------------------$
+#                                                          Rofi
+
+export XDG_DATA_DIR="$XDG_CONFIG_HOME/rofi/theme"          # Themes
+export PATH="$XDG_CONFIG_HOME/rofi/Scripts/:$PATH"         # Scripts
+#---------------------------------------------------------------------------------$
+#                                                          fzf
+
+export FZF_BASE="$XDG_CONFIG_HOME/fzf"                     
+export PATH="$XDG_CONFIG_HOME/fzf/:$PATH"
+#---------------------------------------------------------------------------------$
+#                                                          ripgrep
+
+export RIPGREP="$XDG_CONFIG_HOME/ripgrep/ripgreprc"        
+#---------------------------------------------------------------------------------$
+#                                                          rust
+
+export CARGO_HOME="$XDG_CACHE_HOME/cargo"                  
+export RUSTUP_HOME="$XDG_CONFIG_HOME/rustup"
+#---------------------------------------------------------------------------------$
+#                                                          Pass Password Manager
+
+export PASSWORD_STORE_ENABLE_EXTENSIONS=true               # Enable pass extensions
+export PASS_STORE_DIR="${HOME}/.password-store"            # Default
+export PASSWORD_STORE_GENERATED_LENGTH='64'                # Default
+#---------------------------------------------------------------------------------$
+#                                                          Zettel notes ema
+
+export ZK_PATH="$DROPBOX_HOME/Tutorial-Notes"     # Home 
+export ZK_NOTEBOOK_DIR="$ZK_PATH/zettelkasten"             # Notebook 
+#export PATH="$ZK_PATH/zk_script:$PATH" 		            # Home for auto scripts
+#---------------------------------------------------------------------------------$
+#                                                          Vieb www vim style browser
+
+#export VIEB_ERWIC="$XDG_CONFIG_HOME/vieb/sec.json"    	   # Erwic rc file
+#export VIEB_DATAFOLDER="$XDG_CONFIG_HOME/viebdata"        # Datafile location
+#---------------------------------------------------------------------------------$
+#                                                          Lynx www text brower
+
+export LYNX_CFG="$XDG_CONFIG_HOME/lynx/lynx.cfg"           
+export LYNX_LSS="$XDG_CONFIG_HOME/lynx/lynx.lss"
+export PATH="$XDG_CONFIG_HOME/lynx/:$PATH"
+#---------------------------------------------------------------------------------$
+#                                                          Scripts 
+
+#export PATH="$ZDOTDIR/Scripts:$PATH"                      # zsh  
+export PATH="$HOME/.local/bin/:$PATH" 				       # General
+#---------------------------------------------------------------------------------$
+#                                                          gnupg
+
+GPG="gpg2"                                                 # gpg2 
+#---------------------------------------------------------------------------------$
+#                                                          mailcap
+
+export MAILCAPS="$HOME/.config/mailcap/mailcaprc" 		        # mailcap config
+export NOTMUCH_CONFIG="$HOME/.config/notmuch/notmuch-config"    # notmuch config
+
+
+#---------------------------------------------------------------------------------$
+#                                                          cmus music player
+
+export CMUS_HOME="$XDG_CONFIG_HOME/cmus"                   # config 
+#---------------------------------------------------------------------------------$
+#                                                          surfraw
+
+alias srb='surfraw -browser=$BROWSERCLI'                   # (CLI)
+alias srg='surfraw -browser=$BROWSER'                      # (GUI)
+#---------------------------------------------------------------------------------$
+#                                                          Media Storage 
+
+export EX_MEDIA="/run/media/$USER"                          # External Media 
+export STORAGE_HOME="$EX_MEDIA/STORE"                       # Storage
+
+#---------------------------------------------------------------------------------$
+#                                                          # searx setup
+export SEARX_SETTINGS_PATH="$REPOSITORIES/searx/searx/settings.yml"
+#---------------------------------------------------------------------------------$
+#                                                          # eww bar (bar)
+export EWW="$REPOSITORIES/eww/target/release"
+#---------------------------------------------------------------------------------$
+#                                                          # Qt for wayland
+export QT_QPA_PLATFORM=wayland
+#---------------------------------------------------------------------------------$
+#                                                          # grep colouring
+export GREP_OPTIONS='--color=auto' GREP_COLORS='mt=1;37;41'
+#---------------------------------------------------------------------------------$

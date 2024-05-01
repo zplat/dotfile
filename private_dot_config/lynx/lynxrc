@@ -1,0 +1,122 @@
+#######################################################################
+###  _                      ____                                    ###
+### | |   _   _ _ __ __  __ | __ ) _ __ _____      _____  ___ _ __  ###
+### | |  | | | | '_ \\ \/ / |  _ \| '__/ _ \ \ /\ / / __|/ _ \ '__| ###
+### | |__| |_| | | | |>  <  | |_) | | | (_) \ V  V /\__ \  __/ |    ###
+### |_____\__, |_| |_/_/\_\ |____/|_|  \___/ \_/\_/ |___/\___|_|    ###
+###       |___/                                                     ###
+###------------------------------------------------------------     ###
+#######################################################################
+
+# Lynx User Defaults File
+
+ACCEPT_ALL_COOKIES:TRUE
+SET_COOKIES:FALSE
+PERSISTENT_COOKIES:FALSE
+ASSUME_UNREC_CHARSET:iso-8859-1
+ASSUME_LOCAL_CHARSET:iso-8859-1
+BOLD_H1:FALSE
+BOLD_HEADERS:FALSE
+
+COOKIE_LOOSE_INVALID_DOMAINS:none
+COOKIE_STRICT_INVALID_DOMAINS:none
+COOKIE_QUERY_INVALID_DOMAINS:none
+
+DEFAULT_CACHE_SIZE:10
+DEFAULT_VIRTUAL_MEMORY_SIZE:512000
+STATUS_BUFFER_SIZE:40
+
+DEFAULT_INDEX_FILE:http://www.ncsa.uiuc.edu/SDG/Software/Mosaic/MetaIndex.html
+DEFAULT_INDEX_FILE:http://lynx.isc.org/
+STARTFILE:http://www.google.com
+
+cookie_file=~/.config/lynx/lynx_cookies
+bookmark_file=~/.config/lynx/lynx_bookmarks.html
+
+emac_keys=off
+vi_keys=on
+file_editor=on
+
+CHARACTER_SET:iso-8859-1
+#CHARATCER_SET=UNICODE (UTF-8)
+preferred_language=en
+#preferred_charset=
+PREFERRED_ENCODING:all
+PREPEND_BASE_TO_SOURCE:TRUE
+PREPEND_CHARSET_TO_SOURCE:TRUE
+
+PREFERRED_MEDIA_TYPES:internal
+
+QUIT_DEFAULT_YES:TRUE
+
+dir_list_order=ORDER_BY_NAME
+dir_list_style=MIXED_STYLE
+file_sorting_method=BY_FILENAME
+sub_bookmarks=OFF
+lineedit_mode=Default Binding
+
+#    ROT13'd keyboard layout
+#    JCUKEN Cyrillic, for AT 101-key kbd
+#    YAWERTY Cyrillic, for DEC LK201 kbd
+kblayout=ROT13'd keyboard layout
+
+case_sensitive_searching=off
+
+DEFAULT_COLORS:false
+
+#show_color=default  #always, never
+show_cursor=on
+
+show_dotfiles=off
+
+user_mode=ADVANCED
+verbose_images=on
+select_popups=on
+
+visited_links=LAST_REVERSED
+
+personal_mail_address=on
+
+#################################################################################
+# COLORS (only available if compiled with SVr4 curses or slang)
+#
+# The line must be of the form:
+#
+# COLOR:Integer:Foreground:Background
+#
+#
+# The Integer value is interpreted as follows:
+#   0 - normal                      - normal text
+#   1 - bold                        - hyperlinks, see also BOLD_* options above
+#   2 - reverse                     - statusline
+#   3 - bold + reverse              (not used)
+#   4 - underline                   - text emphasis (EM, I, B tags etc.)
+#   5 - bold + underline            - hyperlinks within text emphasis
+#   6 - reverse + underline         - currently selected hyperlink
+#   7 - reverse + underline + bold  - WHEREIS search hits
+#
+#
+# Each Foreground and Background value must be one of:
+#   black         red            green         brown
+#   blue          magenta        cyan          lightgray
+#   gray          brightred      brightgreen   yellow
+#   brightblue    brightmagenta  brightcyan    white
+#
+# or (if you have configured using --enable-default-colors with ncurses or slang), "default" may be used for foreground and background.
+#
+# Note that in most cases a white background is really "lightgray", since terminals generally do not implement bright backgrounds.
+#
+#
+# Uncomment and change any of the compilation defaults.
+Default value
+COLOR:0:black:white
+COLOR:1:blue:white
+COLOR:2:yellow:blue
+COLOR:3:green:white
+COLOR:4:magenta:white
+COLOR:5:blue:white
+COLOR:6:red:white
+COLOR:6:brightred:black
+COLOR:7:magenta:cyan
+#
+##################################################################################

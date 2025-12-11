@@ -1,0 +1,84 @@
+#---------------------------------@#
+#  Environmentals
+#---------------------------------@#
+
+#---------------------------------------------------------------------------------$
+#                                                          Default Programs
+
+export EDITOR="nvim"                                       
+export READER="zathura"
+export VISUAL="nvim"
+export TERMINAL="alacritty"
+export VIDEO="mpv"
+export IMAGE="eog"
+export COLORTERM="truecolor"
+export OPENER="xdg-open"
+export PAGER="less"
+export BROWSER="google-chrome"
+export BROWSERCLI="lynx"
+export MAILDIR="$XDG_DATA_DIR/mail"
+export TERM="xterm-256color"
+export XCURSOR_PATH=/usr/share/icons
+export XCURSOR_THEME=Adwaita
+#---------------------------------------------------------------------------------$
+#                                                          git repositories
+export REPOSITORIES="$HOME/.local/repositories"
+#---------------------------------------------------------------------------------$
+#                                                          zsh
+
+export GPG_TTY=$(tty)                                      # Connect terminal to Std input
+#---------------------------------------------------------------------------------$
+#                                                          Dropbox folder
+
+export DROPBOX_HOME="$HOME/Dropbox"	       
+#---------------------------------------------------------------------------------$
+#                                                          Less
+
+export LESSHISTFILE=-                                      
+#---------------------------------------------------------------------------------$
+#                                                          R-Stats (cran)
+
+export R_HOME_USER="$XDG_CONFIG_HOME/R"            		# Library
+export R_PROFILE_USER="$XDG_CONFIG_HOME/R/.Rprofile"            # Library
+export R_LIBS_USER="$XDG_CONFIG_HOME/R/library"            	# Library
+export R_HISTFILE="$XDG_CONFIG_HOME/R/.Rhistory"            	# Library
+
+
+#---------------------------------------------------------------------------------$
+#                                                          Pass Password Manager
+
+export PASSWORD_STORE_ENABLE_EXTENSIONS=true               # Enable pass extensions
+export PASS_STORE_DIR="${HOME}/.password-store"            # Default
+export PASSWORD_STORE_GENERATED_LENGTH='64'                # Default
+#---------------------------------------------------------------------------------$
+#                                                          Zettel notes ema
+
+export ZK_PATH="$DROPBOX_HOME/Vaults/"		           # Home 
+export ZK_NOTEBOOK_DIR="$ZK_PATH/Notes"                # Notebook 
+#export PATH="$ZK_PATH/zk_script:$PATH" 	           # Home for auto scripts
+#---------------------------------------------------------------------------------$
+#                                                          Lynx www text brower
+
+export LYNX_CFG="$XDG_CONFIG_HOME/lynx/lynx.cfg"           
+export LYNX_LSS="$XDG_CONFIG_HOME/lynx/lynx.lss"
+export PATH="$XDG_CONFIG_HOME/lynx/:$PATH"
+#---------------------------------------------------------------------------------$
+#                                                          gnupg
+
+GPG="gpg2"                                                 # gpg2 
+#---------------------------------------------------------------------------------$
+#                                                          mailcap
+
+export MAILCAPS="$HOME/.config/mailcap/mailcaprc" 		        # mailcap config
+export NOTMUCH_CONFIG="$HOME/.config/notmuch/notmuch-config"    # notmuch config
+
+
+#---------------------------------------------------------------------------------$
+#                                                          surfraw
+
+alias srb='surfraw -browser=$BROWSERCLI'                   # (CLI)
+alias srg='surfraw -browser=$BROWSER'                      # (GUI)
+#---------------------------------------------------------------------------------$
+#							  fcitx
+#export GTK_IM_MODULE=fcitx
+#export QT_IM_MODULE=fcitx

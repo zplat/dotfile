@@ -1,0 +1,72 @@
+# ~/.config/ghostty/config
+
+# FONTS
+font-family = "JetBrainsMono Nerd Font Mono"
+font-size = 26
+
+# INITIAL SCRIPTS
+#command=/home/phlight/.local/bin/ghostty-tmux.sh
+
+# THEMES
+theme = TokyoNight Night
+#theme = Tomorrow Night Bright
+
+# DISPLAY
+shell-integration-features = no-cursor,sudo,no-title
+cursor-style = block
+adjust-cell-height = 35%
+background-opacity = 0.96
+
+mouse-hide-while-typing = true
+mouse-scroll-multiplier = 2
+
+window-padding-balance = true 
+confirm-close-surface=false
+window-decoration = false
+window-save-state = always
+macos-titlebar-style=transparent
+window-colorspace = "display-p3"
+#background = 1C2021
+background=#1a1c1c
+# foreground = d4be98
+
+# KEYBINDINgS #
+# WINDOWS
+keybind = ctrl+shift+w=close_window
+keybind = ctrl+shift+r=reload_config
+keybind = ctrl+shift+x=close_surface
+keybind = ctrl+shift+n=new_window
+
+# TABS
+keybind = ctrl+shift+c=new_tab
+keybind = ctrl+shift+f=next_tab
+keybind = ctrl+shift+p=previous_tab
+keybind = ctrl+shift+comma=move_tab:-1
+keybind = ctrl+shift+period=move_tab:1
+
+# TAB SWITCHING
+keybind = ctrl+shift+1=goto_tab:1
+keybind = ctrl+shift+2=goto_tab:2
+keybind = ctrl+shift+3=goto_tab:3
+keybind = ctrl+shift+4=goto_tab:4
+keybind = ctrl+shift+5=goto_tab:5
+keybind = ctrl+shift+6=goto_tab:6
+keybind = ctrl+shift+7=goto_tab:7
+keybind = ctrl+shift+8=goto_tab:8
+keybind = ctrl+shift+9=goto_tab:9
+
+# SPLITS
+keybind = ctrl+shift+\=new_split:right
+keybind = ctrl+shift+-=new_split:down
+
+keybind = ctrl+shift+j=goto_split:bottom
+keybind = ctrl+shift+k=goto_split:top
+keybind = ctrl+shift+h=goto_split:left
+keybind = ctrl+shift+l=goto_split:right
+
+keybind = ctrl+shift+z=toggle_split_zoom
+
+keybind = ctrl+shift+e=equalize_splits
+
+# OTHER
+copy-on-select = clipboard

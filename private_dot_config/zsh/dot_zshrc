@@ -1,0 +1,86 @@
+#!/usr/bin/env zsh
+
+# The following lines were added by compinstall
+zstyle :compinstall filename '$XDG_CONFIG_HOME/zsh/.zshrc'
+
+autoload -Uz compinit
+compinit
+
+# keybindings set to vim
+bindkey -v
+# End of lines configured by zsh-newuser-install
+
+
+#-----------------------$
+# Load zplug
+#-----------------------$
+
+# Initialize the plugin manager
+source ~/.config/zplug/init.zsh
+
+# Add plugins
+zplug "zsh-users/zsh-completions"
+zplug "zsh-users/zsh-autosuggestions"
+zplug "zsh-users/zsh-syntax-highlighting", defer:2
+zplug "zsh-users/zsh-history-substring-search", defer:3
+zplug "jeffreytse/zsh-vi-mode"
+
+# Select a theme
+#zplug "themes/clean", from:oh-my-zsh, as:theme
+
+# Install plugins if there are plugins that have not been installed
+if ! zplug check --verbose; then
+    printf "Install? [y/N]: "
+    if read -q; then
+        echo; zplug install
+    fi
+fi
+
+# Load plugins
+zplug load 
+
+#-----------------------$
+# Load scripts
+#-----------------------$
+
+#----------------------------------------------------------------------------------------------------------@#
+#path=($ZDOTDIR/plugins/zsh-completions/src $fpath )                         #  Completions
+autoload -U edit-command-line
+zle -N edit-command-line
+bindkey -M vicmd 'v' edit-command-line
+#----------------------------------------------------------------------------------------------------------@#
+#fpath=($ZDOTDIR/Scripts $fpath )                                             # to run user installed scripts
+#autoload -Uz Scripts; Scripts
+#----------------------------------------------------------------------------------------------------------@#
+
+
+#-----------------------$
+# Source files
+#-----------------------$
+source $ZDOTDIR/Aliases/aliases                                              # aliases
+source $ZDOTDIR/env/env                                                      # zsh env config
+# Set-up FZF key bindings (CTRL R for fuzzy history finder)
+source <(fzf --zsh)
+#source $ZDOTDIR/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh  # Highlight for terminal
+source /usr/share/fzf/key-bindings.zsh
+source /usr/share/fzf/completion.zsh
+
+# zsh-bd
+. $HOME/.config/zsh/plugins/bd/bd.zsh
+
+HISTFILE=~/.config/zsh/zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+setopt appendhistory
+
+#-----------------------$
+# Compiler makeflags
+#-----------------------$
+CORES=$(nproc)
+LOAD=$((CORES/2))
+JOBS=$((LOAD+1))
+export MAKEFLAGS="-j$JOBS -l$LOAD"                                           # makeflag
+
+eval "$(zoxide init zsh)"
+eval "$(starship init zsh)"
+

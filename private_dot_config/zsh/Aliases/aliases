@@ -1,0 +1,46 @@
+#----------------------------------------------------------------------------------------------------------@
+#                                                                               File managers
+# Using exa to present output
+alias ls='eza -a --icons'
+alias l='eza -al --icons'
+alias lt='eza -a --tree --level=1 --icons'
+
+alias store="sudo mount /dev/sdb1 /run/media/phlight"
+#----------------------------------------------------------------------------------------------------------@
+#                                                                               Applications
+
+alias t='tmux -f $XDG_CONFIG_HOME/tmux/tmux.conf'                             	# tmux
+alias v="nvim"                                                                  # nvim
+alias sx="$XDG_CONFIG_HOME/sxiv/sxiv.sh"                                        # sxiv - open dir/file script
+alias playlist="$HOME/.local/bin/mpv-player.sh"                                 # mpv playlist in folder
+alias cm="chezmoi"
+
+#----------------------------------------------------------------------------------------------------------@
+#                                                                               Emanote Zettelkasten
+
+alias ema="emanote &"                                                              # Emanote server
+#----------------------------------------------------------------------------------------------------------@
+#                                                                               zk Zettelkasten
+
+alias daily="zk daily"                                                          # Daily journal 
+alias zI="zk edit -i"                                                            # zk edit interactive
+#----------------------------------------------------------------------------------------------------------@
+#                                                                               Web Tools
+
+alias b="buku"                                                                  # buku bookmarks
+#----------------------------------------------------------------------------------------------------------@
+#                                                                               OS Cmds
+
+alias shut='shutdown -h now'                                                    # shutdown
+#----------------------------------------------------------------------------------------------------------@
+#                                                                               mail
+
+alias mbsync="mbsync -c \"$XDG_CONFIG_HOME/isync/mbsyncrc\""                    # mbsync
+#----------------------------------------------------------------------------------------------------------@
+#                                                                               qmk
+
+alias flash_9="qmk flash -kb ferris/sweep -km ferris9 -bl dfu"                  # flash ferris9
+alias compile_9="qmk compile -kb ferris/sweep -km ferris9 "                  # flash ferris9
+#------------------------------------------------------------------------------:---------------------------@
+
+#alias zk=""

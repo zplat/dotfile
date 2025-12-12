@@ -30,18 +30,18 @@ export GPG_TTY=$(tty)                                      # Connect terminal to
 #---------------------------------------------------------------------------------$
 #                                                          Dropbox folder
 
-export DROPBOX_HOME="$HOME/Dropbox"	       
+export DROPBOX_HOME="$HOME/Dropbox"
 #---------------------------------------------------------------------------------$
 #                                                          Less
 
-export LESSHISTFILE=-                                      
+export LESSHISTFILE=-
 #---------------------------------------------------------------------------------$
 #                                                          R-Stats (cran)
 
-export R_HOME_USER="$XDG_CONFIG_HOME/R"            		# Library
-export R_PROFILE_USER="$XDG_CONFIG_HOME/R/.Rprofile"            # Library
-export R_LIBS_USER="$XDG_CONFIG_HOME/R/library"            	# Library
-export R_HISTFILE="$XDG_CONFIG_HOME/R/.Rhistory"            	# Library
+export R_HOME_USER="$XDG_CONFIG_HOME/R"                    # Library
+export R_PROFILE_USER="$XDG_CONFIG_HOME/R/.Rprofile"       # Library
+export R_LIBS_USER="$XDG_CONFIG_HOME/R/library"            # Library
+export R_HISTFILE="$XDG_CONFIG_HOME/R/.Rhistory"           # Library
 
 
 #---------------------------------------------------------------------------------$
@@ -53,9 +53,9 @@ export PASSWORD_STORE_GENERATED_LENGTH='64'                # Default
 #---------------------------------------------------------------------------------$
 #                                                          Zettel notes ema
 
-export ZK_PATH="$DROPBOX_HOME/Vaults/"		           # Home 
-export ZK_NOTEBOOK_DIR="$ZK_PATH/Notes"                # Notebook 
-#export PATH="$ZK_PATH/zk_script:$PATH" 	           # Home for auto scripts
+export ZK_PATH="$DROPBOX_HOME/Vaults/"                     # Home 
+export ZK_NOTEBOOK_DIR="$ZK_PATH/Notes"                    # Notebook 
+#export PATH="$ZK_PATH/zk_script:$PATH"                    # Home for auto scripts
 #---------------------------------------------------------------------------------$
 #                                                          Lynx www text brower
 
@@ -69,7 +69,7 @@ GPG="gpg2"                                                 # gpg2
 #---------------------------------------------------------------------------------$
 #                                                          mailcap
 
-export MAILCAPS="$HOME/.config/mailcap/mailcaprc" 		        # mailcap config
+export MAILCAPS="$HOME/.config/mailcap/mailcaprc"               # mailcap config
 export NOTMUCH_CONFIG="$HOME/.config/notmuch/notmuch-config"    # notmuch config
 
 
@@ -79,6 +79,6 @@ export NOTMUCH_CONFIG="$HOME/.config/notmuch/notmuch-config"    # notmuch config
 alias srb='surfraw -browser=$BROWSERCLI'                   # (CLI)
 alias srg='surfraw -browser=$BROWSER'                      # (GUI)
 #---------------------------------------------------------------------------------$
-#							  fcitx
+#                                                          fcitx
 #export GTK_IM_MODULE=fcitx
 #export QT_IM_MODULE=fcitx
